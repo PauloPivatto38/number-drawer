@@ -11,7 +11,8 @@ function draw() {
     drawn.push(number);
   }
 
-  alert(drawn);
+  let result = document.getElementById("result");
+  result.innerHTML = `<label class="texto__paragrafo">Drawn numbers: ${drawn}</label>`;
 }
 
 function getRandomNumber(min, max) {
