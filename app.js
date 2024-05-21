@@ -8,6 +8,11 @@ function draw() {
 
   for (let i = 0; i < quantity; i++) {
     number = getRandomNumber(fromNumber, toNumber);
+
+    while (drawn.includes(number)) {
+      number = getRandomNumber(fromNumber, toNumber);
+    }
+
     drawn.push(number);
   }
 
