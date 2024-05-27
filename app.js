@@ -3,6 +3,11 @@ function draw() {
   let fromNumber = parseInt(document.getElementById("fromNumber").value);
   let toNumber = parseInt(document.getElementById("toNumber").value);
 
+  if (fromNumber >= toNumber) {
+    alert(`The 'From number' field must be smaller than the 'To number' field`);
+    return;
+  }
+
   let drawn = [];
   let number;
 
