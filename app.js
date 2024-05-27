@@ -8,6 +8,13 @@ function draw() {
     return;
   }
 
+  if (quantity > toNumber - fromNumber + 1) {
+    alert(
+      `Field 'Amount of numbers' must be greater than or equal to the difference between 'To number' and 'From number' fields`
+    );
+    return;
+  }
+
   let drawn = [];
   let number;
 
